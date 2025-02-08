@@ -1,0 +1,46 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 30px; /* Increased padding for a roomier feel */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Softer shadow for separation */
+  }
+  
+  .header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    gap: 25px; /* Increased spacing between nav links */
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px; /* More padding around links */
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+    color: #f39c12;
+    text-decoration: underline;
+  }
+
+  nav button {
+    padding: 4px 8px; /* More padding around links */
+  }
+
+  /* Ensure content does not overlap with the footer */
+body {
+  margin: 0;
+  padding-bottom: 50px; /* Same as footer height */
+  position: relative;
+}

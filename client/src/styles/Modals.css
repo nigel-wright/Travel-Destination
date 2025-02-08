@@ -1,0 +1,310 @@
+/* Full-screen overlay for dimming the background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  /* Slide down animation */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  /* Input styling */
+  .modal-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* H2 styling */
+  .modal-content h2 {
+    color: black;
+  }
+
+  /* H2 styling */
+  .modal-content p {
+    color: black;
+    font-size: 15px;
+  }
+
+  /* Label styling */
+  .modal-content label {
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Button styling */
+  .modal-content button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .modal-content button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+
+/* Styling for the account toggle buttons */
+.account-toggle {
+    font-size: 0.9rem; /* Smaller font size */
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .account-toggle:hover {
+    color: white;
+    background-color: #0056b3;
+  }
+
+  /* General Modal Container */
+.account-container {
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+/* Header Styling */
+.account-container h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+/* Profile Picture Styling */
+.account-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+/* Account Info */
+.account-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.account-container h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #444444;
+}
+
+.account-container span {
+  display: block;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Change Password Button */
+.account-container .chage-password {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.account-container .chage-password:hover {
+  background-color: #0056b3;
+}
+
+/* Password Form */
+.account-container form {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.account-container form label,
+.account-container form h4 {
+  display: block;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+.account-container form input {
+  width: 93%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.account-container form button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.account-container form button:hover {
+  background-color: #218838;
+}
+
+.site-settings {
+  background-color: #28a745;
+  margin: 5px;
+}
+
+.site-settings:hover {
+  background-color: #19662b;
+}
+
+/* Error Message */
+.account-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ff4d4d;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .account-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .account-container img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .account-container h1 {
+    font-size: 20px;
+  }
+
+  .account-container h3 {
+    font-size: 16px;
+  }
+
+  .account-container form button {
+    font-size: 12px;
+  }
+}
+
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.logout-container h1 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.logout-container p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.logout-container button {
+  background-color: #1a8b3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.logout-container button:hover {
+  background-color: #145a28;
+}
+
+.logout-container button:active {
+  transform: scale(0.98);
+}
+
+.logout-container button:last-of-type {
+  background-color: #d9534f; /* Red for "No" button */
+}
+
+.logout-container button:last-of-type:hover {
+  background-color: #c9302c;
+}

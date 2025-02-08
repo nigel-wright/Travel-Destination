@@ -1,0 +1,31 @@
+/* Footer.css */
+
+.footer {
+  background-color: #333; /* Light gray background */
+  text-align: center;
+  padding: 2.0em 0; /* Spacing around text */
+  position:sticky bottom; /* Makes the footer fixed */
+  bottom: 0; /* Aligns it at the bottom */
+  width: 100%; /* Stretches the footer to fit the page */
+  border-top: 1px solid #dee2e6; /* Optional: border for separation */
+  transition: transform 0.3s ease; /* Smooth transition for appearing/disappearing */
+}
+
+.footer.visible {
+  transform: translateY(0); /* Fully visible */
+}
+
+.footer.hidden {
+  transform: translateY(100%); /* Hide by moving it down */
+}
+
+.footer p {
+  margin: 0; /* Removes margin for tight spacing */
+  font-size: 14px;
+  color: #6c757d; /* Gray text */
+}
+
+.separator {
+  margin: 0 8px; /* Spacing around the separator */
+  color: #adb5bd; /* Light gray for visual distinction */
+}

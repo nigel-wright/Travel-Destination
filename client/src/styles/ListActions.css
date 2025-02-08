@@ -1,0 +1,160 @@
+/* General container styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea, select, button {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: #fff;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+button[style*="background-color: red"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+button[style*="background-color: red"]:hover {
+    background-color: #c82333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Success and error messages */
+p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+p[style*="color: red"] {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+p[style*="color: green"] {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* List items and destinations */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Modal styles */
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ReactModal__Content {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ReactModal__Content h2 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ReactModal__Content button {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input, textarea, select {
+        font-size: 14px;
+    }
+
+    ul {
+        padding: 10px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}

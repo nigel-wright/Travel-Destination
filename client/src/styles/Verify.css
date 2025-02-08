@@ -1,0 +1,65 @@
+/* Styles for the verify container */
+.verify-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the heading */
+  .verify-container h1,
+  .verify-container h3 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Buttons shared style */
+  .verify-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .verify-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the expand verify button */
+  .expand-veriy {
+    font-size: 1.2rem;
+    background-color: #28a745;
+  }
+  
+  .expand-veriy:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Style for success and error messages */
+  .verify-container p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .verify-container p[style*="red"] {
+    color: #dc3545 !important;
+  }
+  
+  .verify-container p[style*="green"] {
+    color: #28a745 !important;
+  }
